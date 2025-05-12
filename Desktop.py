@@ -3,7 +3,7 @@ from Produto import Produto
 class Desktop(Produto):
     def __init__(self,marca = None, modelo=None, cor=None, preco=0.0, categoria=None, potenciadafonte=0):
         super().__init__(marca, modelo, cor, preco, categoria)
-        self._potenciadafonte = potenciadafonte  # Atributo fracamente privado
+        self._potenciadafonte = potenciadafonte 
 
     @property
     def potencia_da_fonte(self):
